@@ -1,0 +1,162 @@
+/* FORM */
+  .form{
+    margin-top: 20px;
+    flex: 1
+  }
+  
+  .fieldsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .formInputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .formInputContainer input {
+    background: transparent;
+    outline: none;
+    border: 1px solid;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: #fff;
+    border-color: #fff;
+    transition: all 0.3s ease-in-out;
+    height: 15px;
+  }
+  
+  .fieldContainer{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid;
+    border-color: #fff;
+    background: transparent;
+    border-radius: 30px;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 15px;
+    cursor: text;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .fieldContainer input{
+    flex: 1;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+  }
+  
+  .eyeLogo{
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+    animation-name: pop-up;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    font-weight: normal;
+  }
+  
+  @keyframes pop-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  
+  .actionButton {
+    background: rgb(93, 95, 239, 0.8);
+    color: #fff;
+    padding: 15px 20px;
+    width: 90%;
+    outline: none;
+    border: 1px solid rgb(93, 95, 239, 0.8);
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    height: 50px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .actionButton:hover {
+    background: rgba(93, 95, 239, 0.85);
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(93, 95, 239, 0.85);
+  }
+  
+  .actionButton:focus {
+    background: rgba(93, 95, 239, 1);
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(93, 95, 239, 1);
+  }
+  
+  .forgotPasswordContainer{
+    flex: 1;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+  
+  .forgotPassword{
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  .notification{
+    flex: 1;
+    width: 90%;
+    text-align: center;
+    color: lightgreen;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /* RESPONSIVENESS */
+  
+  
+  @media (max-width: 900px) {
+    .fieldsContainer {
+      width: 100%;
+    }
+    .actionButton {
+      width: 100%;
+    }
+    .error{
+      flex: 1;
+      text-align: center;
+    }
+    .forgotPasswordContainer{
+      width: 100%;
+    }
+    .notification{
+      width: 100%;
+    }
+  }
+  
+  
